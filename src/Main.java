@@ -145,12 +145,86 @@ public class Main {
             case 1 -> System.out.println("Monday");
             case 2 -> System.out.println("Thuesday");
             case 3 -> System.out.println("Wednesday");
-            case 4 -> System.out.println("Thurday");
+            case 4 -> System.out.println("Thursday");
             case 5 -> System.out.println("Friday");
             case 6 -> System.out.println("Saturday");
             case 7 -> System.out.println("Sunday");
+            default -> System.out.println("En dehors du switch");
         }
 
+
+        //----------------- Boucle -------------
+        /*
+        * while
+        * */
+        System.out.println("---------Boucle while ------------");
+        int i = 0;
+        while (i < 10) {
+            System.out.println(i);
+            i++;
+        }
+
+        /*
+         * Do while
+         *  */
+        System.out.println("--------Boucle Do while -------------");
+        int j = 0;
+        do {
+            System.out.println(j);
+            j++;
+        }
+        while (j<10);
+
+        /*
+        *  for ( fonctionne mais normalement uniquement utilisé dans un tableau )
+        * */
+        System.out.println("--------Boucle for -------------");
+        for (int k = 0; k<10; k++){
+            System.out.println(k);
+        }
+
+        /*
+        * For dans un tableau
+        * */
+        System.out.println("--------Boucle for dans un tableau -------------");
+        String[] towns = {"Paris", "Lyon", "Bordeaux", "Caen"};
+        for (String t : towns) {
+            System.out.println(t);
+        }
+
+        /*
+        * Break
+        * */
+        System.out.println("--------Boucle for avec break -------------");
+        for (int m = 0; m<10; m++){
+            if (m == 4){
+                break;
+            }
+            System.out.println(m);
+        }
+
+        /*
+         * Continue
+         * */
+        System.out.println("-------- Boucle for avec continue -------------");
+        for (int n = 0; n<10; n++){
+            if (n == 4){
+                continue;
+            }
+            System.out.println(n);
+        }
+
+        //---------- Tableau ---------
+        System.out.println("-------- Tableau -------------");
+        int[] arrayNum = {10,20,30,40};
+        System.out.println(arrayNum[1]);
+        System.out.println(arrayNum.length);
+
+        System.out.println("--------Tableau multi -------------");
+        //Multidim
+        int[][] myNumbers = {{1,2,3,4}, {5,6,7}};
+        int xx = myNumbers[1][2];                       // output : 7
+        System.out.println(xx);
 
 
     }
