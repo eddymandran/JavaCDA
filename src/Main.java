@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -155,8 +158,8 @@ public class Main {
 
         //----------------- Boucle -------------
         /*
-        * while
-        * */
+         * while
+         * */
         System.out.println("---------Boucle while ------------");
         int i = 0;
         while (i < 10) {
@@ -173,19 +176,19 @@ public class Main {
             System.out.println(j);
             j++;
         }
-        while (j<10);
+        while (j < 10);
 
         /*
-        *  for ( fonctionne mais normalement uniquement utilisé dans un tableau )
-        * */
+         *  for ( fonctionne mais normalement uniquement utilisé dans un tableau )
+         * */
         System.out.println("--------Boucle for -------------");
-        for (int k = 0; k<10; k++){
+        for (int k = 0; k < 10; k++) {
             System.out.println(k);
         }
 
         /*
-        * For dans un tableau
-        * */
+         * For dans un tableau
+         * */
         System.out.println("--------Boucle for dans un tableau -------------");
         String[] towns = {"Paris", "Lyon", "Bordeaux", "Caen"};
         for (String t : towns) {
@@ -193,11 +196,11 @@ public class Main {
         }
 
         /*
-        * Break
-        * */
+         * Break
+         * */
         System.out.println("--------Boucle for avec break -------------");
-        for (int m = 0; m<10; m++){
-            if (m == 4){
+        for (int m = 0; m < 10; m++) {
+            if (m == 4) {
                 break;
             }
             System.out.println(m);
@@ -207,8 +210,8 @@ public class Main {
          * Continue
          * */
         System.out.println("-------- Boucle for avec continue -------------");
-        for (int n = 0; n<10; n++){
-            if (n == 4){
+        for (int n = 0; n < 10; n++) {
+            if (n == 4) {
                 continue;
             }
             System.out.println(n);
@@ -216,16 +219,24 @@ public class Main {
 
         //---------- Tableau ---------
         System.out.println("-------- Tableau -------------");
-        int[] arrayNum = {10,20,30,40};
+        int[] arrayNum = {10, 20, 30, 40};
         System.out.println(arrayNum[1]);
         System.out.println(arrayNum.length);
 
         System.out.println("--------Tableau multi -------------");
         //Multidim
-        int[][] myNumbers = {{1,2,3,4}, {5,6,7}};
+        int[][] myNumbers = {{1, 2, 3, 4}, {5, 6, 7}};
         int xx = myNumbers[1][2];                       // output : 7
         System.out.println(xx);
 
+        // -------------------- Scanner --------------
 
+        Scanner scan = new Scanner(System.in);
+        int numberScan = scan.nextInt();
+        System.out.println(numberScan);
+
+        // ------------------- Random -------------
+        int rand = new Random().nextInt(1,10);
+        System.out.println(rand);
     }
 }
