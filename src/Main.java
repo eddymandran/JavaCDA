@@ -231,12 +231,16 @@ public class Main {
 
         // -------------------- Scanner --------------
 
-        Scanner scan = new Scanner(System.in);
-        int numberScan = scan.nextInt();
-        System.out.println(numberScan);
+//        Scanner scan = new Scanner(System.in);
+//        int numberScan = scan.nextInt();
+//        System.out.println(numberScan);
 
         // ------------------- Random -------------
         int rand = new Random().nextInt(1,10);
         System.out.println(rand);
+
+        //------------------- Methode -------------
+        MyMethod.myMethod();
+        MyMethod.myName("Eddy");
     }
 }
