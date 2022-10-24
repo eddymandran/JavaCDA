@@ -76,5 +76,53 @@ public class Main {
 
         System.out.println(myDouble2);  // Output 15.78
         System.out.println(myInt2);     // Output 15
+
+
+        // ------------------ Les opérateurs -----------------------------------
+
+        /*
+        * Modulo
+        * */
+        int xM = 5;
+        int yM = 2;
+        System.out.println(xM % yM);
+
+        /*
+        * Increment
+        * */
+        int xI = 5;
+        ++xI;
+        System.out.println(xI);
+
+        /*
+        * Decrement
+        * */
+        --xI;
+        System.out.println(xI);
+
+        /*
+        * String
+        * */
+        String txt = "Hello CDA de Lyon";
+        System.out.println("longeur du text: " + txt.length());
+
+        /*
+        * Maj et Min
+        * */
+        System.out.println(txt.toUpperCase());
+        System.out.println(txt.toLowerCase());
+
+        /*
+        * Concatenation
+        * */
+        System.out.println(firstName + " "+ lastName);
+        //seconde methode
+        System.out.println(firstName.concat(" "+ lastName));
+        //Special caractere
+        String txtChar = "OL est la seul équipe \"Olympique\" de France";
+        System.out.println(txtChar);
+
+
+
     }
 }
