@@ -81,46 +81,75 @@ public class Main {
         // ------------------ Les opérateurs -----------------------------------
 
         /*
-        * Modulo
-        * */
+         * Modulo
+         * */
         int xM = 5;
         int yM = 2;
         System.out.println(xM % yM);
 
         /*
-        * Increment
-        * */
+         * Increment
+         * */
         int xI = 5;
         ++xI;
         System.out.println(xI);
 
         /*
-        * Decrement
-        * */
+         * Decrement
+         * */
         --xI;
         System.out.println(xI);
 
         /*
-        * String
-        * */
+         * String
+         * */
         String txt = "Hello CDA de Lyon";
         System.out.println("longeur du text: " + txt.length());
 
         /*
-        * Maj et Min
-        * */
+         * Maj et Min
+         * */
         System.out.println(txt.toUpperCase());
         System.out.println(txt.toLowerCase());
 
         /*
-        * Concatenation
-        * */
-        System.out.println(firstName + " "+ lastName);
+         * Concatenation
+         * */
+        System.out.println(firstName + " " + lastName);
         //seconde methode
-        System.out.println(firstName.concat(" "+ lastName));
+        System.out.println(firstName.concat(" " + lastName));
         //Special caractere
         String txtChar = "OL est la seul équipe \"Olympique\" de France";
         System.out.println(txtChar);
+
+// -------------------------- Maths --------------
+        int max = Math.max(8, 10);
+        System.out.println(max);
+        int min = Math.min(8, 10);
+        System.out.println(min);
+        double racine = Math.sqrt(64); // racine carrée
+        System.out.println(racine);
+
+        // ---------------- Boolean --------------
+        int myAge = 25;
+        int votingAge = 18;
+        System.out.println(myAge > votingAge); // output True
+
+        if (myAge > votingAge) {
+            System.out.println("Je suis majeur");
+        }
+
+        //---------------- Switch ----------------
+        int day = 4;
+        switch (day) {
+            case 1 -> System.out.println("Monday");
+            case 2 -> System.out.println("Thuesday");
+            case 3 -> System.out.println("Wednesday");
+            case 4 -> System.out.println("Thurday");
+            case 5 -> System.out.println("Friday");
+            case 6 -> System.out.println("Saturday");
+            case 7 -> System.out.println("Sunday");
+        }
 
 
 
