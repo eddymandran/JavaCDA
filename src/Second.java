@@ -1,6 +1,10 @@
 public class Second {
-    public static void main(String[] args){
-        Main myObj = new Main();
-        System.out.println(myObj.x);
+
+    int modelYear;
+    String modelName;
+
+    public Second(int year, String name) {
+        this.modelYear = year;
+        this.modelName = name;
     }
 }
